@@ -1,0 +1,47 @@
+
+---
+title: "Handouts with Knitr"
+author: "Christopher Prener, Ph.D."
+date: '(`r format(Sys.time(), "%B %d, %Y")`)'
+output: 
+  word_document:
+    reference_docx: ../data/style.docx
+bibliography: ../data/bibliography.bib
+nocite: | 
+  @wickham2016r, @xie2018r
+---
+
+```{r setup, echo=FALSE, message=FALSE}
+# tidyverse packages
+library(dplyr)        # data cleaning
+library(ggplot2)      # data plotting
+library(tidyr)
+
+# other packages
+library(here)         # file path management
+library(knitr)        # support for document knitting
+
+# load functions
+source(here("source", "tidyFreq.R"))
+
+# load data
+auto <- mpg
+```
+
+## Abstract
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Turpis egestas sed tempus urna. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Amet dictum sit amet justo donec. Sed turpis tincidunt id aliquet risus feugiat in. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Vel eros donec ac odio tempor orci dapibus. Mauris in aliquam sem fringilla. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Neque volutpat ac tincidunt vitae semper. Scelerisque fermentum dui faucibus in. Ac felis donec et odio pellentesque. Gravida cum sociis natoque penatibus et magnis. Habitant morbi tristique senectus et netus et malesuada fames ac. Aliquet lectus proin nibh nisl condimentum. Semper auctor neque vitae tempus. Mi quis hendrerit dolor magna eget est. Semper eget duis at tellus at urna condimentum.
+
+## Descriptive Statistics
+
+```{r echo=FALSE}
+auto %>%
+  select(displ, cyl, cty) %>%
+  rename(
+    `Displacement (liters)` = displ,
+    Cylinders = cyl,
+    `City Fuel Efficiency (mpg)` = cty
+  ) %>%
+  tidyFreq()
+```
+
+## References
