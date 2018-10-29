@@ -19,3 +19,4 @@ matrix:
 
 script:
   - Rscript -e "rmarkdown::render('examples/handout/docs/handout.Rmd')"
+  - Rscript -e "base::source('extras/correlations.R')"

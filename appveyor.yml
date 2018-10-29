@@ -48,6 +48,7 @@ build_script:
 
 test_script:
   - Rscript -e "rmarkdown::render('examples/handout/docs/handout.Rmd')"
+  - Rscript -e "base::source('extras/correlations.R')"
 
 on_failure:
   - 7z a failure.zip *.Rcheck\*
