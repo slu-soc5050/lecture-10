@@ -10,10 +10,9 @@ nocite: |
   @wickham2016r, @xie2018r
 ---
 
-```{r setup, echo=FALSE, message=FALSE}
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 # tidyverse packages
 library(dplyr)        # data cleaning
-library(ggplot2)      # data plotting
 library(tidyr)
 
 # other packages
@@ -24,7 +23,7 @@ library(knitr)        # support for document knitting
 source(here("source", "tidyFreq.R"))
 
 # load data
-auto <- mpg
+auto <- readr::read_csv(here("data", "mpg.csv"))
 ```
 
 ## Abstract
@@ -32,7 +31,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Descriptive Statistics
 
-```{r echo=FALSE}
+```{r echo=FALSE, warning=FALSE}
 auto %>%
   select(displ, cyl, cty) %>%
   rename(
