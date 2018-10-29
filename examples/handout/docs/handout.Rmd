@@ -1,4 +1,3 @@
-
 ---
 title: "Handouts with Knitr"
 author: "Christopher Prener, Ph.D."
