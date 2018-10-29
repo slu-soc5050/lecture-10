@@ -6,18 +6,22 @@ Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
 Description: This is the repository for Lecture 09 of the Saint Louis University
     course SOC 4015/5050 - Quantitative Analysis. This lecture introduces the
     theory behind Pearson's r correlations and the formulae for calculating
-    them by hand. Handout creation in LaTeX is also discussed.
+    them by hand. Handout creation in RMarkdown is also discussed.
 Depends: R (>= 3.4)
 License: CC-BY-SA-4.0 + LICENSE
 Web: https://slu-soc5050.github.io
 URL: https://github.com/slu-soc5050/lecture-10
 BugReports: https://github.com/slu-soc5050/lecture-10/issues
 Imports:
+    dplyr,
+    ggplot2,
     here,
     knitr,
+    prener,
     remotes,
     rmarkdown,
     testDriveR,
+    tidyr,
     usethis
 Remotes:
-    chris-prener/testDriveR
+    chris-prener/prener
