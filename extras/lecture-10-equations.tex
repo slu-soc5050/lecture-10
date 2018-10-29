@@ -1,0 +1,51 @@
+\documentclass{tufte-handout}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% set hyperlink attributes
+\hypersetup{colorlinks}
+
+\usepackage{amsmath}
+
+% ============================================================
+
+% define the title
+\title{SOC 4015/5050: Lecture 10 Equations}
+\author{Christopher Prener, Ph.D.}
+\date{Fall 2018}
+% ============================================================
+\begin{document}
+% ============================================================
+\maketitle % generates the title
+% ============================================================
+
+\vspace{5mm}
+\section{Pearson's r}
+\begin{subequations}
+\paragraph{Calculating r}
+\begin{equation}
+\scalebox{2} {$ r =\frac { \sum _{ i=1 }^{ n }{ (x-\overline { x } )(y-\overline { y } ) }  }{ (n-1){s}_{x}{s}_{y} } $}
+\end{equation}
+
+\vspace{3mm}
+\paragraph{Percent of Variance Explained}
+\begin{equation}
+\scalebox{2} {$ {r}^{2} $}
+\end{equation}
+
+\vspace{3mm}
+\paragraph{Calculating Degrees of Freedom (v)}
+\begin{equation}
+\scalebox{2} {$ v=n-2 $}
+\end{equation}
+
+\vspace{3mm}
+\paragraph{Calculating t}
+\begin{equation}
+\scalebox{2} {$ t=\frac{r}{\sqrt{\frac{1-{r}^{2}}{v}}} $}
+\end{equation}
+\end{subequations}
+
+% ============================================================
+\end{document}
