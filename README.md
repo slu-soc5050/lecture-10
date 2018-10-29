@@ -1,7 +1,7 @@
 lecture-10 <img src="https://slu-soc5050.github.io/images/logo.png" align="right" />
 ===========================================================
 [![](https://img.shields.io/badge/semester-fall%202018-orange.svg)](https://github.com/slu-soc5050/lecture-10)
-[![](https://img.shields.io/badge/release-draft-red.svg)](https://github.com/slu-soc5050/lecture-10)
+[![](https://img.shields.io/badge/release-lecture-orange.svg)](https://github.com/slu-soc5050/lecture-10)
 [![](https://img.shields.io/github/release/slu-soc5050/lecture-10.svg?label=version)](https://github.com/slu-soc5050/lecture-10/releases)
 [![](https://img.shields.io/github/last-commit/slu-soc5050/lecture-10.svg)](https://github.com/slu-soc5050/lecture-10/commits/master)
 [![](https://img.shields.io/github/repo-size/slu-soc5050/lecture-10.svg)](https://github.com/slu-soc5050/lecture-10)
@@ -13,7 +13,10 @@ This is the repository for Lecture 09 of the Saint Louis University course SOC 4
 ### Lecture Objectives
 At the end of this lecture and its corresponding assignments, students should be able to:
 
-1.
+1. Appraise the accuracy of political polls conducted in the United States.
+2. Construct a presentation handout using RMarkdown
+3. Explain the theoretical basis for correlations and scatterplots
+4. Appriase common pitfalls with correlation iterpretation
 
 ### Lecture Resources
 
