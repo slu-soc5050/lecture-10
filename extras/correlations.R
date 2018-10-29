@@ -1,8 +1,12 @@
+# this script creates the positive and negative correlation graphics in the lecture slides
+
+# dependencies - tidyverse
 library(ggplot2)
-library(prener)
 
-auto <- mpg
+# dependencies - install from github
+library(prener) 
 
+# positive correlation
 ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
   geom_point(position = "jitter", size = 4) + 
   geom_smooth(method = "lm", color = "#ff0000", size = 2) +
@@ -14,8 +18,9 @@ ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
   ) +
   cp_sequoiaTheme(background = "gray")
 
-cp_plotSave(filename = "positiveCorr.png", preset = "lg", dpi = 500)
+cp_plotSave(filename = "extras/images/positiveCorr.png", preset = "lg", dpi = 500)
 
+# negative correlation
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   geom_point(position = "jitter", size = 4) + 
   geom_smooth(method = "lm", color = "#ff0000", size = 2) +
@@ -27,4 +32,4 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
   ) +
   cp_sequoiaTheme(background = "gray")
 
-cp_plotSave(filename = "negativeCorr.png", preset = "lg", dpi = 500)
+cp_plotSave(filename = "extras/images/negativeCorr.png", preset = "lg", dpi = 500)
